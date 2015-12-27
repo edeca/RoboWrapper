@@ -1,6 +1,6 @@
 # RoboWrapper manual #
 
-RoboWrapper is a simple Python script that executes [Robocopy](https://en.wikipedia.org/wiki/Robocopy) with simple rule files.  These rule files allow auto-discovery of drive names and safety checks.
+RoboWrapper is a Python script that executes [Robocopy](https://en.wikipedia.org/wiki/Robocopy) with simple rule files.  These rule files allow auto-discovery of drive names and safety checks.
 
 RoboWrapper is only designed to run on Windows.
 
