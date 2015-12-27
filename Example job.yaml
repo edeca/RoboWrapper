@@ -18,7 +18,7 @@ destination:
     #flag: '$drive$\Robocopy.flag'
     
 robocopy:
-	  # Robocopy options (warning, /MIR can delete files!)
+    # Robocopy options (warning, /MIR can delete files!)
     options: "/FFT /DST /MIR /XJ /NP /R:3 /W:30"
     
     # Tell Robocopy to save a log
