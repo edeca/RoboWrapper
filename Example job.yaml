@@ -1,0 +1,29 @@
+name: Backup some stuff to KINGSTON USB
+source:
+    # Note that serial always takes precedence if supplied and
+    # a matching drive is found.
+    serial: 'AB12CD34'
+    path: 'MyStuff'
+
+    # If the drive was found as D: this would be D:\MyStuff
+
+destination:
+    # Will find the first drive labelled KINGSTON.
+    label: "KINGSTON"
+    path: 'Backup\MyStuff'
+
+    # If the drive was found as F: this would be F:\Backup\MyStuff
+
+    # Optional: require this file, in this case F:\Robocopy.flag
+    #flag: '$drive$\Robocopy.flag'
+    
+robocopy:
+	  # Robocopy options (warning, /MIR can delete files!)
+    options: "/FFT /DST /MIR /XJ /NP /R:3 /W:30"
+    
+    # Tell Robocopy to save a log
+    log: '$dst_drive$\Robocopy-$timestamp$.log'
+    
+settings:
+    # Optional format parameter for $timestamp$
+    time_format: "%Y-%m-%dT%H%M%S"
