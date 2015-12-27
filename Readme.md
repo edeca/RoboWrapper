@@ -116,6 +116,8 @@ destination:
 
 Expansion in this way is preferable to the usual `%AppData%` format because Python can check the relevant directories exist before executing Robocopy.
 
+See `VALID_ENV_VARS` in the source for a list of environment variables which will be expanded.
+
 ### Adding a Robocopy log ###
 
 The Robocopy log can be specified like below:
