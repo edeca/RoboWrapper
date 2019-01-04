@@ -1,3 +1,3 @@
-pytz==2015.7
-PyYAML==3.11
-prettytable==0.7.2
+pytz
+PyYAML
+prettytable
