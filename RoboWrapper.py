@@ -323,7 +323,7 @@ def LoadJob(fp):
     """ Load YAML from a stream and handle any errors """
 
     try:
-        job = yaml.load(fp)
+        job = yaml.load(fp, Loader=yaml.SafeLoader)
     except yaml.YAMLError, exc:
         logging.error("YAML error in job file {} (run with -v for debug)"
                 .format(fp.name))
